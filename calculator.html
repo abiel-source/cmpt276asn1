@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Asn1</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>Grade Calculator</h2>
+
+        <div class="calculator">
+
+            <h4 class="section">Activities</h4>
+            <p>Give grades to the numeric activities</p>
+
+            <table class="calculator__panel">
+                <tr>
+                    <th>Name</th>
+                    <th>Short Name</th>
+                    <th>Weight</th>
+                    <th>Grade</th>
+                    <th>Percent</th>
+                </tr>
+                <tr>
+                    <td>Activity 1</td>
+                    <td>A1</td>
+                    <td class="weight">
+                        <input type="number">
+                    </td>
+                    <td class="grade">
+                        <input type="number">
+                        <span>/</span>
+                        <input type="number">
+                    </td>
+                    <td class="percentage">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Activity 2</td>
+                    <td>A2</td>
+                    <td class="weight">
+                        <input type="number">
+                    </td>
+                    <td class="grade">
+                        <input type="number">
+                        <span>/</span>
+                        <input type="number">
+                    </td>
+                    <td class="percentage">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Activity 3</td>
+                    <td>A3</td>
+                    <td class="weight">
+                        <input type="number">
+                    </td>
+                    <td class="grade">
+                        <input type="number">
+                        <span>/</span>
+                        <input type="number">
+                    </td>
+                    <td class="percentage">
+                        <p></p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Activity 4</td>
+                    <td>A4</td>
+                    <td class="weight">
+                        <input type="number">
+                    </td>
+                    <td class="grade">
+                        <input type="number">
+                        <span>/</span>
+                        <input type="number">
+                    </td>
+                    <td class="percentage">
+                        <p></p>
+                    </td>
+                </tr>
+            </table>
+
+            <h4 class="section">Result</h4>
+
+            <div id="result"></div>
+
+            <div class="calculator__execute">
+                <button id="hiddenOption" onclick="emailResult()" style="visibility:hidden;">EMAIL</button>
+                <button onclick="calculateWeighted()">WEIGHTED</button>
+                <button onclick="calculateMean()">MEAN</button>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+</html>
